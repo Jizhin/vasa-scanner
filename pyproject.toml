@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vasa-scanner"
+version = "0.1.1"
+description = "VASA Security Scanner - Web Application Security Testing Tool"
+readme = "README.md"
+requires-python = ">=3.8"
+
+authors = [
+    { name="Jishin C", email="jisprofessional2@gmail.com" }
+]
+
+license = {text = "MIT"}
+
+dependencies = [
+    "requests",
+    "openpyxl"
+]
+
+keywords = [
+    "security",
+    "vapt",
+    "scanner",
+    "web security",
+    "penetration testing",
+    "owasp"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+]
+
+[project.scripts]
+vasa-scan = "vasa_scanner.cli:main"
